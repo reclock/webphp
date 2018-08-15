@@ -1,16 +1,17 @@
-// function ver(){
-//    var fname =  document.getElementById("name").value;
-//     if(fname != "root"){
-//         document.getElementById("name").value = "admin";
-//     }
-// }
+
 $(document).ready(function () {
     $("#tijiao").click(function () {
+        var nameval= $("#name").val();
+        var fmale = $("input[name='sex']:checked").val();
+        inputdata ={"name":nameval,"male":fmale};
+
         $.post("sub.php",
-            { name: "zheng" },
+            {dt: inputdata},
             function (data, stutus) {
                 $("#name").val(data);
             }
-        );
+        ); 
     });
+
 });
+

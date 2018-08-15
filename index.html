@@ -17,6 +17,18 @@
 			line-height: 22px;
 			color: #616161;
 		}
+
+		#zxd_x {
+			width: 20px;
+			height: 20px;
+			text-align: center;
+			font-size: 16px;
+			color: red;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			cursor: pointer;
+		}
 	</style>
 	<script src="jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="verify.js"></script>
@@ -43,7 +55,7 @@
 	</form> -->
 	<form>
 		名字:
-		<input type="text" name="name" id="name" value="" />
+		<input type="text" name="name" id="name" />
 		<br>
 		<br> E-mail:
 		<input type="text" name="mail" id="mail" value="" />
@@ -57,12 +69,14 @@
 		</textarea>
 		<br>
 		<br> 性别:
-		<input type="radio" name="male" id="male" value="男" />男
-		<input type="radio" name="male" id="male" value="女" />女
+		<input type="radio" name="sex" id="sex" value="male" />男
+		<input type="radio" name="sex" id="sex" value="fmale" />女
 		<br>
 		<br>
 		<input type="button" value="提交" id="tijiao" />
 	</form>
+
+
 
 </body>
 
