@@ -30,8 +30,8 @@
 			cursor: pointer;
 		}
 	</style>
-	<script src="jquery-3.3.1.js"></script>
-	<script type="text/javascript" src="verify.js"></script>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/verify.js"></script>
 
 </head>
 
@@ -65,7 +65,6 @@
 		<br>
 		<br> 备注:
 		<textarea rows="2" cols="17">
-			
 		</textarea>
 		<br>
 		<br> 性别:
@@ -75,9 +74,11 @@
 		<br>
 		<input type="button" value="提交" id="tijiao" />
 	</form>
-
-
-
+	<form>
+		<input type="button" id="getdate" value="提交请求">
+		<input type="text" id="setdata" autocomplete="off"/>
+		<textarea id="text" autocomplete="off"/></textarea>
+	</form>
 </body>
 
 </html>
